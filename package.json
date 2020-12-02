@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "advent": "nodemon ./src/day1/day1.ts"
+    "advent": "nodemon ./src/advent.ts"
   },
   "repository": {
     "type": "git",

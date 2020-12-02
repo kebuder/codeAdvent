@@ -18,8 +18,10 @@ export class day1 {
             const file = fs.readFile("./src/day1/day1Input.txt", function (err, data) {
                 if (err) {
                     console.log(err);
+                    observable.error(err);
                 } else {
                     observable.next(data.toString().split("\n").map(stringValue => +stringValue))
+                    observable.complete();
                 }
             });
         });
@@ -86,4 +88,4 @@ export class day1 {
 
 
 
-new day1();
+//new day1();
